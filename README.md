@@ -2,7 +2,7 @@
 ucode IT academy | Marathon C | Part of the Matrix
 
 ## Task
-Create a function `mx_cube` that prints a representation of a 3d cube to the standard output. The size of the cube depends on the variable `n` which is passed to the function as a parameter.
+Create a program that decodes all valid variations of an encrypted math expression.
 
 ## Skills
-Problem Solving, Analysis, Reasoning & Argumentation, Agility & Adaptability, Self-Management, UNIX, Git, Procedural Programming, Algorithms, C, Communication
+Problem Solving, Analysis, Reasoning & Argumentation, Agility & Adaptability, Self-Management, UNIX, Git, Procedural Programming, Algorithms, C, Communication.
