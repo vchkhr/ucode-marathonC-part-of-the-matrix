@@ -1,9 +1,10 @@
 #include "part_of_the_matrix.h"
 
 bool mx_isspace(char c) {
-    for (int space = 9; space <= 13; space++)
-        if (c == (char)space)
-            return true;
+    if (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f' ||
+        c == '\r') {
+        return true;
+    }
 
-    return c == (char)32 ? true : false;
+    return false;
 }

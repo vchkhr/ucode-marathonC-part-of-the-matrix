@@ -1,27 +1,16 @@
-all: copy object.o move clear calc
+flags := -std=c11 -Wall -Wextra -Werror -Wpedantic
+name := part_of_the_matrix
 
-copy:
-	mkdir obj
-	cp inc/*.h obj
-	cp src/*.c obj
+all: $(name)
 
-object.o:
-	clang -std=c11 -Wall -Wextra -Werror -Wpedantic -c obj/*.c
-
-move:
-	cp *.o obj
+$(name):
+	clang $(flags) -Iinc -o $(name) src/*.c
 
 clean:
-	rm *.o
-	rm obj/*.h 
-	rm obj/*.c 
-
-calc:
-	clang -std=c11 -Wall -Wextra -Werror -Wpedantic -o part_of_the_matrix obj/*.o 
+	rm -rf $(name)
 
 uninstall:
-	rm -rf obj
-	rm part_of_the_matrix
+	rm -rf $(name)
 
 reinstall:
 	make uninstall

@@ -1,9 +1,9 @@
 #include "part_of_the_matrix.h"
 
-bool mx_isdigit(int c) {
-    for (int number = 48; number <= 57; number++)
-        if (c == number)
-            return 1;
+bool mx_isdigit(char c) {
+    if (c >= '0' && c <= '9') {
+        return true;
+    }
 
-    return 0;
+    return false;
 }

@@ -1,10 +1,15 @@
 #include "part_of_the_matrix.h"
 
 int mx_strlen(const char *s) {
-    int counter = 0;
+	if (!s) {
+		return 0;
+	}
 
-    while (*s++)
-        counter++;
+	int length = 0;
 
-    return counter;
+	for (; s[length];) {
+		length++;
+	}
+	
+	return length;
 }
